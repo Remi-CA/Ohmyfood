@@ -1,0 +1,23 @@
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: $background-dark;
+        &__city {
+            padding-left: 18px;
+        }
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 287px;
+    background-color: $background-light;
+}
+
+.btn__purple {
+    @include btn-purple
+}

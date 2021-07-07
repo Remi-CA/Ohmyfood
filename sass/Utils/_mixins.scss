@@ -1,0 +1,9 @@
+@mixin btn-purple {
+    background: linear-gradient(352deg, rgba(2,0,36,1) 0%, ($primary) 0%, ($secondary) 100%);
+    color: white;
+    border-radius: 100px;
+    border: none;
+    padding: 18px 22px;
+    box-shadow: #d7d7d7 0px 2px 2px 2px;
+}
+
