@@ -21,3 +21,23 @@
 .btn__purple {
     @include btn-purple
 }
+
+.Tuto {
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    background-color: white;
+    &__steps {
+        list-style-type: none;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__text {
+        padding-left: 27px;
+    }
+    &__list {
+        @include btn-grey
+    }
+}

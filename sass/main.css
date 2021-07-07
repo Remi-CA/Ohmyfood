@@ -1,6 +1,5 @@
 body {
   font-family: 'Roboto', sans-serif;
-  max-width: 1440px;
   margin: auto;
   font-size: 12px;
 }
@@ -66,10 +65,53 @@ header {
 }
 
 .btn__purple {
-  background: linear-gradient(352deg, #020024 0%, #9356DC 0%, #FF79DA 100%);
-  color: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   border-radius: 100px;
   border: none;
+  padding: 18px 22px;
+  -webkit-box-shadow: #d7d7d7 0px 2px 2px 2px;
+          box-shadow: #d7d7d7 0px 2px 2px 2px;
+}
+
+.btn__purple a {
+  color: white;
+}
+
+.Tuto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 440px;
+  background-color: white;
+}
+
+.Tuto__steps {
+  list-style-type: none;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Tuto__text {
+  padding-left: 27px;
+}
+
+.Tuto__list {
+  background-color: f6f6f6;
+  border-radius: 100px;
   padding: 18px 22px;
   -webkit-box-shadow: #d7d7d7 0px 2px 2px 2px;
           box-shadow: #d7d7d7 0px 2px 2px 2px;
