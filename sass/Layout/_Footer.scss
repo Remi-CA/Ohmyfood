@@ -1,0 +1,29 @@
+.footer {
+    height: 171px;
+    background-color:  #353535;
+    padding-left: 24px;
+    padding-top: 26px;
+    i {
+        width: 12px;
+        height: 13px;
+        padding-right: 12px;
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 26px;
+        color: white;
+        font-family: 'Shrikhand', cursive;
+    }
+    &__bloc {
+        margin-bottom: 0;
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 13px;
+         
+    }
+    &__text {
+        color: white;
+    }
+}

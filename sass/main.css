@@ -28,6 +28,44 @@ header {
   text-align: center;
 }
 
+.footer {
+  height: 171px;
+  background-color: #353535;
+  padding-left: 24px;
+  padding-top: 26px;
+}
+
+.footer i {
+  width: 12px;
+  height: 13px;
+  padding-right: 12px;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+  color: white;
+  font-family: 'Shrikhand', cursive;
+}
+
+.footer__bloc {
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 13px;
+}
+
+.footer__text {
+  color: white;
+}
+
 .Search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,11 +153,23 @@ header {
 }
 
 .Tuto__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #f6f6f6;
   padding: 30px 0px 25px 33px;
   border-radius: 25px;
   -webkit-box-shadow: 0px 3px 7px 3px #d7d7d7;
           box-shadow: 0px 3px 7px 3px #d7d7d7;
+}
+
+.Tuto__num {
+  position: absolute;
+  background-color: #9356DC;
+  padding: 6px 10px;
+  border-radius: 50px;
+  color: white;
+  left: 18px;
 }
 
 .restaurant {

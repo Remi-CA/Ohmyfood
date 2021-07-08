@@ -44,8 +44,18 @@
         padding-left: 27px;
     }
     &__list {
+        display: flex;
         @include btn-grey
     }
+    &__num {
+        position: absolute;
+        background-color: $primary;
+        padding: 6px 10px;
+        border-radius: 50px;
+        color: white;
+        left: 18px;
+    }
+ 
 }
 
 .restaurant {
