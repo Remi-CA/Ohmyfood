@@ -164,12 +164,13 @@ header {
 }
 
 .Tuto__num {
-  position: absolute;
+  position: relative;
   background-color: #9356DC;
   padding: 6px 10px;
   border-radius: 50px;
   color: white;
-  left: 18px;
+  left: -46px;
+  top: -4px;
 }
 
 .restaurant {
@@ -225,5 +226,123 @@ header {
   display: flex;
   background-color: white;
   border-radius: 0px 0px 20px 20px;
+}
+
+main {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main img {
+  width: 375px;
+  height: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Menu {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 14px;
+  background-color: white;
+  padding: 20px 0px;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -60px;
+}
+
+.Menu__title {
+  width: 80%;
+  text-align: left;
+}
+
+.Menu__starter {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 14px;
+}
+
+.Menu__dish {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 14px;
+}
+
+.Menu__dessert {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 14px;
+}
+
+.Menu__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 7px 3px #d7d7d7;
+          box-shadow: 0px 3px 7px 3px #d7d7d7;
+  padding: 5px 20px 2px 20px;
+}
+
+.Menu__txt p {
+  margin: 0;
+}
+
+.Menu__txt h3 {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

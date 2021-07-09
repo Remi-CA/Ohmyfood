@@ -48,12 +48,13 @@
         @include btn-grey
     }
     &__num {
-        position: absolute;
+        position: relative;
         background-color: $primary;
         padding: 6px 10px;
         border-radius: 50px;
         color: white;
-        left: 18px;
+        left: -46px;
+        top: -4px;
     }
  
 }
