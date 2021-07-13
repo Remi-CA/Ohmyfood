@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
+    width: 100%;
     background-color: $background-dark;
         h3 {
             padding-left: 18px;
@@ -15,6 +16,7 @@
     justify-content: center;
     align-items: center;
     height: 287px;
+    width: 100%;
     background-color: $background-light;
 }
 
@@ -62,6 +64,7 @@
 .restaurant {
     margin: auto;
     background-color: $background-dark;
+    width: 100%;
     &__title {
         margin: auto;
         width: 375px;
@@ -77,6 +80,7 @@
     img {
         object-fit: cover;
         height: 175px;
+        width: 335px;
         border-radius: 20px 20px 0px 0px;
     }
     &__select {
