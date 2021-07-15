@@ -285,6 +285,12 @@ main img {
   margin-top: -60px;
 }
 
+.Menu__underline {
+  width: 40px;
+  border-bottom: #99E2D0 solid 3px;
+  padding-top: 5px;
+}
+
 .Menu__title {
   width: 80%;
   text-align: left;
@@ -364,7 +370,6 @@ main img {
 .Menu__select {
   background-color: #99E2D0;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   height: 45px;
   width: 52px;
@@ -374,6 +379,20 @@ main img {
   position: absolute;
   opacity: 0;
   right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Menu__icon {
+  color: white;
+  font-size: 20px;
 }
 
 .loading {
@@ -476,11 +495,11 @@ main img {
 }
 
 .Menu__choice:hover .Menu__select {
-  -webkit-animation: test 600ms ease-in-out both;
-          animation: test 600ms ease-in-out both;
+  -webkit-animation: slide 600ms ease-in-out both;
+          animation: slide 600ms ease-in-out both;
 }
 
-@-webkit-keyframes test {
+@-webkit-keyframes slide {
   0% {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -497,7 +516,7 @@ main img {
   }
 }
 
-@keyframes test {
+@keyframes slide {
   0% {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);

@@ -25,6 +25,11 @@ main {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     margin-top: -60px;
+    &__underline {
+        width: 40px;
+        border-bottom: $tertiary solid 3px;
+        padding-top: 5px;
+    }
     &__title {
         width: 80%;
         text-align: left;
@@ -79,6 +84,12 @@ main {
         position: absolute;
         opacity: 0;
         right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-   
+    &__icon {
+        color: white;
+        font-size: 20px;
+    }
 }

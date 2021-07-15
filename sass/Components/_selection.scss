@@ -4,10 +4,10 @@
     }
 
 .Menu__choice:hover .Menu__select {
-    animation: test 600ms ease-in-out both;
+    animation: slide 600ms ease-in-out both;
 }
 
-@keyframes test {
+@keyframes slide {
     0% {
         transform: scaleX(0);
         transform-origin: 100% 100%;
