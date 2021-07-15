@@ -24,6 +24,10 @@ a {
   color: black;
 }
 
+.Menu__price p {
+  padding-right: 30px;
+}
+
 header {
   text-align: center;
 }
@@ -339,7 +343,8 @@ main img {
   border-radius: 10px;
   -webkit-box-shadow: 0px 3px 7px 3px #d7d7d7;
           box-shadow: 0px 3px 7px 3px #d7d7d7;
-  padding: 5px 20px 2px 20px;
+  padding: 5px 0px 2px 20px;
+  cursor: pointer;
 }
 
 .Menu__txt p {
@@ -348,6 +353,27 @@ main img {
 
 .Menu__txt h3 {
   margin: 0;
+}
+
+.Menu__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Menu__select {
+  background-color: #99E2D0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 45px;
+  width: 52px;
+  margin-bottom: 2px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  right: 1rem;
 }
 
 .loading {
@@ -440,6 +466,51 @@ main img {
     z-index: -5;
     -webkit-transform: rotate(1080deg);
             transform: rotate(1080deg);
+  }
+}
+
+.Menu__choice:hover .Menu__price {
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  padding-right: 25px;
+}
+
+.Menu__choice:hover .Menu__select {
+  -webkit-animation: test 600ms ease-in-out both;
+          animation: test 600ms ease-in-out both;
+}
+
+@-webkit-keyframes test {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes test {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */
