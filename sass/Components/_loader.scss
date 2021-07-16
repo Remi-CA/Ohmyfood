@@ -1,10 +1,13 @@
 .loading {
     background: white;
     position: fixed;
+    display: flex;
+    justify-content: center;    
+    align-items: center;  
     width: 100%;
     height: 100%;
-    opacity: 0;
-    animation: loadingFade 3s linear 1;
+    z-index: 1000;
+    animation: loadingOut 200ms 1.5s forwards;
     &__box {
       position: absolute;
       top: 50%;
@@ -14,39 +17,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      animation: loadingFade 3s linear;
     }
     &__icon {
         background: linear-gradient(to left, $secondary, $primary);
         -webkit-background-clip: text;
         color: transparent;
         font-size: 100px;
-        animation: loadingSpinner 3s linear 1;
+        animation: loadingSpinner 3s linear;
     }
   }
-
-  @keyframes loadingFade {
-    from {
-      opacity: 1;
-      z-index: 10;
-    }
-    90% {
-      opacity: 1;
-      z-index: 10;
-    }
-    to {
-      opacity: 0;
-      z-index: -5;
-    }
-  }
-  
-  @keyframes loadingSpinner {
-    from {
-      z-index: 15;
-      transform: rotate(0deg);
-    }
-    to {
-      z-index: -5;
-      transform: rotate(1080deg);
-    }
-  }
-  

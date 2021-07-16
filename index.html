@@ -17,24 +17,24 @@
 </head>
 
 <body>
-    <!--LOADER-->
     <div class="loading">
         <div class="loading__box">
-          <i class="loading__icon fas fa-circle-notch"></i>
+            <i class="loading__icon fas fa-circle-notch"></i>
         </div>
     </div>
     <!--HEADER-->
     <header>
         <h1><a href="#">ohmyfood</a></h1>
     </header>
+    
     <!--MAIN-->
     <main>
-    <!--SEARCH-->
+        <!--SEARCH-->
         <section class="Search">
             <i class="fas fa-map-marker-alt"></i>
             <h3>Paris, Belleville</h3>
         </section>
-    <!--INFO-->
+        <!--INFO-->
         <section class="Info">
             <h2>
                 Réservez le menu qui vous convient
@@ -43,14 +43,14 @@
                 Découvrez des restaurants d'exception, séléctionnés par nos soins.
             </p>
             <a href="#">
-                <span class="Info__button">
-                    <button class="btn__purple">
+                <div class="Info__button">
+                    <div class="btn__purple">
                         Explorer nos restaurants  
-                    </button>
-                </span>
+                    </div>
+                </div>
             </a>
         </section>
-    <!--TUTO-->
+        <!--TUTO-->
         <section class="Tuto">
                 <h2 class="Tuto__title">
                     Fonctionnement
@@ -79,43 +79,65 @@
                     </li>
                 </ol>
         </section>
-    <!--RESTAURANT-->
+        <!--RESTAURANT-->
         <section class="restaurant">
             <h2 class="restaurant__title">
                 Restaurants
             </h2>
-        <!--MEALS-->
+            <!--MEALS-->
             <div class="Meals">
-                <a class="Meals__select" href="#">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                <a class="Meals__select" href="La-palette-du-gout.html">
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La-palette-du-gout">
+                    <div class="Meals__new">Nouveau</div>
                     <div class="Meals__paragraph">
-                        <h3 class="Meals__title">La palette du goût</h3>
-                        <p class="Meals__text">Ménilmontant</p>
-                        <i class="far fa-heart"></i>
+                        <div class="Meals__note">
+                            <h3 class="Meals__title">La palette du goût</h3>
+                            <p class="Meals__text">Ménilmontant</p>
+                        </div>
+                        <div class="Meals__icon">
+                            <i class="far fa-heart Meals__emptyheart"></i>
+                            <i class="fas fa-heart Meals__fullheart"></i>
+                        </div>
                     </div>
                 </a>
-                <a class="Meals__select" href="#">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                <a class="Meals__select" href="La-note-enchantee.html">
+                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La-note-enchantee">
+                    <div class="Meals__new">Nouveau</div>
                     <div class="Meals__paragraph">
-                        <h3 class="Meals__title">La note enchantée</h3>
-                        <p class="Meals__text">Charonne</p>
-                        <i class="far fa-heart"></i>
+                        <div class="Meals__note">
+                            <h3 class="Meals__title">La note enchantée</h3>
+                            <p class="Meals__text">Charonne</p>
+                        </div>
+                        <div class="Meals__icon">
+                            <i class="far fa-heart Meals__emptyheart"></i>
+                            <i class="fas fa-heart Meals__fullheart"></i>
+                        </div>
                     </div>
                 </a>
-                <a class="Meals__select" href="#">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+                <a class="Meals__select" href="A-la-francaise.html">
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A-la-francaise">
                     <div class="Meals__paragraph">
-                        <h3 class="Meals__title">A la française</h3>
-                        <p class="Meals__text">Cité Rouge</p>
-                        <i class="far fa-heart"></i>
+                        <div class="Meals__note">
+                            <h3 class="Meals__title">A la française</h3>
+                            <p class="Meals__text">Cité Rouge</p>
+                        </div>
+                        <div class="Meals__icon">
+                            <i class="far fa-heart Meals__emptyheart"></i>
+                            <i class="fas fa-heart Meals__fullheart"></i>
+                        </div>
                     </div>
                 </a>
-                <a class="Meals__select" href="#">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                <a class="Meals__select" href="Le-delice-des-sens.html">
+                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le-delice-des-sens">
                     <div class="Meals__paragraph">
-                        <h3 class="Meals__title">Le délice des sens</h3>
-                        <p class="Meals__text">Folie-Méricourt</p>
-                        <i class="far fa-heart"></i>
+                        <div class="Meals__note">
+                            <h3 class="Meals__title">Le délice des sens</h3>
+                            <p class="Meals__text">Folie-Méricourt</p>
+                        </div>
+                        <div class="Meals__icon">
+                            <i class="far fa-heart Meals__emptyheart"></i>
+                            <i class="fas fa-heart Meals__fullheart"></i>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -124,10 +146,12 @@
     <footer class="footer">
         <h3 class="footer__title">ohmyfood</h3>
         <ul class="footer__bloc">
-            <li><i class="fas fa-utensils"></i><a class="footer__text" href="#">Proposer un restaurant</li></a>
-            <li><i class="footer__icon fas fa-hands-helping"></i><a class="footer__text" href="#">Devenir partenaire</li></a>
-            <li><a class="footer__text" href="#">Mentions légales</li></a>
-            <li><a class="footer__text" href="#">Contact</li></a>
+            <li><i class="fas fa-utensils"></i><a class="footer__text" href="#">Proposer un restaurant</a></li>
+            <li><i class="footer__icon fas fa-hands-helping"></i><a class="footer__text" href="#">Devenir partenaire</a></li>
+            <li><a class="footer__text" href="#">Mentions légales</a></li>
+            <li><a class="footer__text" href="#">Contact</a></li>
         </ul>
     </footer>
+    <!--LOADER-->
+
 </body>
