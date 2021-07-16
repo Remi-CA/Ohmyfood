@@ -7,6 +7,10 @@
     animation: slide 600ms ease-in-out both;
 }
 
+.Menu__choice:hover .Menu__icon {
+    animation: rotate 0.5s ease-in-out both;
+}
+
 @keyframes slide {
     0% {
         transform: scaleX(0);
@@ -18,5 +22,14 @@
         transform: scaleX(1);
         transform-origin: 100% 100%;
         opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
