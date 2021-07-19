@@ -187,7 +187,22 @@ a {
 }
 
 header {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 63px;
+}
+
+header i {
+  font-size: 18px;
+  padding-left: 23px;
+  position: absolute;
+  top: 22px;
 }
 
 .footer {
