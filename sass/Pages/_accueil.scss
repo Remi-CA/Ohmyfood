@@ -18,10 +18,23 @@
     height: 287px;
     width: 100%;
     background-color: $background-light;
+    &__button {
+        margin: 17px 0px 57px 0px;
+    }
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+    h2 {
+        text-align: center
+    }
 }
 
 .btn__purple {
-    @include btn-purple
+    @include btn-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Tuto {
@@ -58,8 +71,16 @@
         left: -46px;
         top: -4px;
     }
- 
 }
+
+.Tuto__list:hover {
+    background-color: lighten($color: $primary, $amount: 30);
+    i {
+        color: $primary;
+    }
+}
+
+
 
 .restaurant {
     margin: auto;

@@ -19,7 +19,7 @@ main {
     align-items: center;
     row-gap: 14px;
     background-color: white;
-    padding: 20px 0px;
+    padding-top: 20px;
     width: 100%;
     position: relative;
     border-top-left-radius: 50px;
@@ -93,5 +93,8 @@ main {
     &__icon {
         color: white;
         font-size: 20px;
+    }
+    &__button {
+        margin: 37px 0px 72px 0px;
     }
 }

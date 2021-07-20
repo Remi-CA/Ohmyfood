@@ -170,7 +170,7 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 h3 {
@@ -281,16 +281,39 @@ header i {
   background-color: #f6f6f6;
 }
 
+.Info__button {
+  margin: 17px 0px 57px 0px;
+}
+
+.Info p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.Info h2 {
+  text-align: center;
+}
+
 .btn__purple {
   background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   border-radius: 100px;
   border: none;
-  padding: 18px 22px;
+  width: 218px;
+  height: 50px;
   -webkit-box-shadow: #d7d7d7 0px 2px 2px 2px;
           box-shadow: #d7d7d7 0px 2px 2px 2px;
   cursor: pointer;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Tuto {
@@ -336,7 +359,7 @@ header i {
   display: -ms-flexbox;
   display: flex;
   background-color: #f6f6f6;
-  padding: 30px 0px 25px 33px;
+  padding: 25px 0px 20px 30px;
   border-radius: 25px;
   -webkit-box-shadow: 0px 3px 7px 3px #d7d7d7;
           box-shadow: 0px 3px 7px 3px #d7d7d7;
@@ -350,6 +373,14 @@ header i {
   color: white;
   left: -46px;
   top: -4px;
+}
+
+.Tuto__list:hover {
+  background-color: #e4d5f6;
+}
+
+.Tuto__list:hover i {
+  color: #9356DC;
 }
 
 .restaurant {
@@ -512,7 +543,7 @@ main img {
           align-items: center;
   row-gap: 14px;
   background-color: white;
-  padding: 20px 0px;
+  padding-top: 20px;
   width: 100%;
   position: relative;
   border-top-left-radius: 50px;
@@ -630,6 +661,10 @@ main img {
 .Menu__icon {
   color: white;
   font-size: 20px;
+}
+
+.Menu__button {
+  margin: 37px 0px 72px 0px;
 }
 
 .loading {
