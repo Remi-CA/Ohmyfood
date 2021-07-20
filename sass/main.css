@@ -468,7 +468,7 @@ header i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: white;
-  padding: 20px 26px 20px 14px;
+  padding: 12px 26px 12px 14px;
   border-radius: 0px 0px 20px 20px;
   position: relative;
 }
@@ -486,25 +486,16 @@ header i {
   margin: 0;
 }
 
-.Meals__icon {
-  font-size: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  position: relative;
+.Meals svg {
+  width: 15px;
+  height: 26px;
+  stroke-width: 18;
+  stroke: black;
+  fill: transparent;
 }
 
-.Meals .fa-heart {
-  position: absolute;
-  right: -2px;
-  top: -15px;
-}
-
-.Meals .Meals__fullheart {
-  opacity: 0;
+.Meals svg:hover path {
+  fill: purple;
 }
 
 main {
