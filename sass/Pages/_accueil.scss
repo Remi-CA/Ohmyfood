@@ -141,17 +141,41 @@
     &__text {
         margin: 0;
     }
-    svg {
-        width: 15px;
-        height: 26px;
-        stroke-width: 18;
-        stroke: black;
-        fill: transparent;
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+            .Meals__emptyheart {
+            animation: fade-out 100ms ease-out forwards;
+            }
+            .Meals__fullheart {
+                transform: scale(0.8);
+                transition: 400ms linear;
+            }
+    }
+    &__emptyheart{
+        font-size: 1rem;
+        position: absolute;
+        background-color: white;
+       
+        }
     }
 
-    svg:hover path {
-        fill: purple;
-        
-    }
-
+    &__fullheart {
+        font-size: 1rem;
+        position: absolute;
+        transform: scale(0);
+        &:before {
+            color: transparent;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(180deg,rgba(146, 86, 220, 0.7),rgba(255, 121, 218, 0.7));
+            }
+        } 
 }
+
