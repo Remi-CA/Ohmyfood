@@ -668,8 +668,7 @@ main img {
           box-shadow: 0px 3px 7px 3px #d7d7d7;
   padding: 5px 0px 2px 20px;
   cursor: pointer;
-  -webkit-animation: fadeIn 2s 100ms ease-in-out;
-          animation: fadeIn 2s 100ms ease-in-out;
+  opacity: 0;
 }
 
 .Menu__txt p {
@@ -697,7 +696,7 @@ main img {
   border-bottom-right-radius: 10px;
   position: absolute;
   opacity: 0;
-  right: 1rem;
+  right: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,5 +779,65 @@ main img {
 .Menu__choice:hover .Menu__icon {
   -webkit-animation: rotate 0.5s ease-in-out both;
           animation: rotate 0.5s ease-in-out both;
+}
+
+#Action1 {
+  -webkit-animation: fadeIn 2s 100ms ease-in-out forwards;
+          animation: fadeIn 2s 100ms ease-in-out forwards;
+}
+
+#Action2 {
+  -webkit-animation: fadeIn 2s 200ms ease-in-out forwards;
+          animation: fadeIn 2s 200ms ease-in-out forwards;
+}
+
+#Action3 {
+  -webkit-animation: fadeIn 2s 300ms ease-in-out forwards;
+          animation: fadeIn 2s 300ms ease-in-out forwards;
+}
+
+#Action4 {
+  -webkit-animation: fadeIn 2s 400ms ease-in-out forwards;
+          animation: fadeIn 2s 400ms ease-in-out forwards;
+}
+
+#Action5 {
+  -webkit-animation: fadeIn 2s 500ms ease-in-out forwards;
+          animation: fadeIn 2s 500ms ease-in-out forwards;
+}
+
+#Action6 {
+  -webkit-animation: fadeIn 2s 600ms ease-in-out forwards;
+          animation: fadeIn 2s 600ms ease-in-out forwards;
+}
+
+#Action7 {
+  -webkit-animation: fadeIn 2s 700ms ease-in-out forwards;
+          animation: fadeIn 2s 700ms ease-in-out forwards;
+}
+
+#Action8 {
+  -webkit-animation: fadeIn 2s 800ms ease-in-out forwards;
+          animation: fadeIn 2s 800ms ease-in-out forwards;
+}
+
+#Action9 {
+  -webkit-animation: fadeIn 2s 900ms ease-in-out forwards;
+          animation: fadeIn 2s 900ms ease-in-out forwards;
+}
+
+#Action10 {
+  -webkit-animation: fadeIn 2s 1000ms ease-in-out forwards;
+          animation: fadeIn 2s 1000ms ease-in-out forwards;
+}
+
+#Action11 {
+  -webkit-animation: fadeIn 2s 1100ms ease-in-out forwards;
+          animation: fadeIn 2s 1100ms ease-in-out forwards;
+}
+
+#Action12 {
+  -webkit-animation: fadeIn 2s 1200ms ease-in-out forwards;
+          animation: fadeIn 2s 1200ms ease-in-out forwards;
 }
 /*# sourceMappingURL=main.css.map */
