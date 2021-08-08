@@ -33,6 +33,8 @@ main {
     &__title {
         width: 80%;
         text-align: left;
+        display: flex;
+        justify-content: space-between;
     }
     &__starter {
        width: 90%;

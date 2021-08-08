@@ -5,6 +5,7 @@
     justify-content: center;    
     align-items: center;  
     width: 100%;
+    max-width: 375px;
     height: 100%;
     z-index: 1000;
     animation: loadingOut 200ms 1.5s forwards;
