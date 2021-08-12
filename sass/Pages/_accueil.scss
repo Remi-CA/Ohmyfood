@@ -66,7 +66,7 @@
         position: relative;
         background-color: $primary;
         padding: 6px 10px;
-        border-radius: 50px;
+        border-radius: 1000px;
         color: white;
         left: -46px;
         top: -4px;
@@ -181,46 +181,141 @@
         } 
 }
 
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 1440px){
+    .main {
+        max-width: 1440px;
+    }
+
     .Tuto {
-        margin: auto;
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 100%;
-        background-color: white;
         &__title {
-            padding: 10px 0px 0px 10px;
+            padding: 20px 0px 20px 0px;
+            margin: 0;
             text-align: center;
             max-width: 1440px;
             align-self: center;
         }
         &__steps {
-            list-style-type: none;
             display: flex;
             flex-direction: row;
             column-gap: 8rem;
             align-self: center;
             max-width: 1440px;
-            padding: 0 20px 0 30px;
-            row-gap: 25px;
+            margin-bottom: 40px;
         }
         &__text {
-            padding-left: 27px;
+            padding-left: 10px;
         }
         &__list {
-            display: flex;
-            @include btn-grey;
-            padding-right: 30px;
+            padding: 30px 60px 25px 60px;
         }
         &__num {
-            position: relative;
-            background-color: $primary;
-            padding: 6px 10px;
-            border-radius: 50px;
-            color: white;
-            left: -46px;
+            left: -72px;
             top: -4px;
+        }
+    }
+
+    .restaurant {
+        margin: auto;
+        background-color: $background-dark;
+        width: 100%;
+        height: 450px;
+        &__title {
+            margin: auto;
+            max-width: 1440px;
+            padding: 20px 0px 20px 0px;
+            align-self: center;
+            text-align: center;
+        }
+    }
+
+    .Meals {
+        flex-direction: row;
+        align-self: center;
+        column-gap: 30px;
+        max-width: 1440px;
+        margin: auto;
+        img {
+            height: 200px;
+            width: 300px;
+        }
+        &__select {
+            width: 300px;
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1439px){
+    .main {
+        max-width: 1080px;
+    }
+
+    .Tuto {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        &__title {
+            padding: 20px 0px 20px 0px;
+            margin: 0;
+            text-align: center;
+            max-width: 1080px;
+            align-self: center;
+        }
+        &__steps {
+            display: flex;
+            flex-direction: row;
+            column-gap: 8rem;
+            align-self: center;
+            max-width: 1080px;
+            margin-bottom: 40px;
+        }
+        &__text {
+            padding-left: 10px;
+        }
+        &__list {
+            padding: 30px 60px 25px 60px;
+        }
+        &__num {
+            left: -72px;
+            top: -4px;
+        }
+    }
+
+    .restaurant {
+        margin: auto;
+        background-color: $background-dark;
+        width: 100%;
+        height: 750px;
+        &__title {
+            margin: auto;
+            max-width: 1080px;
+            padding: 20px 0px 20px 0px;
+            align-self: center;
+            text-align: center;
+        }
+    }
+
+    .Meals {
+        flex-direction: row;
+        align-self: center;
+        max-width: 1080px;
+        height: 600px;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 20px;
+        img {
+            height: 200px;
+            width: 400px;
+        }
+        &__select {
+            width: 400px;
+            height: 200px;
         }
     }
 }
