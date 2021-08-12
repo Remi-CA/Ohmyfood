@@ -198,6 +198,7 @@ h3 {
 
 h4 {
   font-weight: 100;
+  margin-bottom: 3px;
 }
 
 a {
@@ -611,7 +612,6 @@ main img {
 .Menu__underline {
   width: 40px;
   border-bottom: #99E2D0 solid 3px;
-  padding-top: 5px;
 }
 
 .Menu__title {
