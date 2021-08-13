@@ -28,3 +28,9 @@
         animation: loadingSpinner 3s linear;
     }
   }
+
+  @media screen and (min-width: 376px) {
+    .loading {
+    max-width: none;
+    }
+  }

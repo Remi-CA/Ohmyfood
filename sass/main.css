@@ -1057,6 +1057,12 @@ main img {
           animation: loadingSpinner 3s linear;
 }
 
+@media screen and (min-width: 376px) {
+  .loading {
+    max-width: none;
+  }
+}
+
 .Menu__choice:hover .Menu__price {
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
